@@ -1,0 +1,100 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36 Edg/143.0.0.0" version="29.2.9">
+  <diagram name="第 1 页" id="QlXpplbevImYEJ8sQLco">
+    <mxGraphModel dx="771" dy="1637" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0" adaptiveColors="auto">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="46CENPHky7xsO2MnEMLG-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="main" vertex="1">
+          <mxGeometry height="60" width="120" x="70" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;div style=&quot;color: rgb(188, 190, 196);&quot;&gt;&lt;pre style=&quot;color: light-dark(rgb(188, 190, 196), rgb(73, 74, 79)); font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color: rgb(86, 168, 245);&quot;&gt;login&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;font color=&quot;#2b71b4&quot;&gt;函数&lt;/font&gt;&lt;/pre&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="100" x="240" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-10" edge="1" parent="1" source="46CENPHky7xsO2MnEMLG-4" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=none;fontColor=default;" target="46CENPHky7xsO2MnEMLG-7" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="210" y="360" />
+            </Array>
+            <mxPoint x="330" y="380" as="sourcePoint" />
+            <mxPoint x="380" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt; background-color: transparent; white-space: normal;&quot;&gt;&lt;font&gt;print_main_menu&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; color: rgb(73, 74, 79);&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;color: rgb(86, 168, 245);&quot;&gt;&lt;font&gt;函数&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-18" parent="1" style="rounded=0;whiteSpace=wrap;labelBackgroundColor=none;" value="print_user_menu&#xa;函数" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_patients&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="610" y="-540" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-23" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_doctors&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="-360" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_regs&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="170" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_meds&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="210" y="-470" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_fees&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="90" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;manage_hosp&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="-160" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;font-size: 9.8pt; background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: normal;&quot;&gt;statistics_menu&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;span style=&quot;white-space: normal;&quot;&gt;函数&lt;/span&gt;&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="130" y="-50" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;save_data&lt;/pre&gt;&lt;pre style=&quot;font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt;&quot;&gt;函数&lt;/pre&gt;&lt;/pre&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="200" y="-230" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-30" edge="1" parent="1" source="46CENPHky7xsO2MnEMLG-7" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" target="46CENPHky7xsO2MnEMLG-18" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="750" />
+            </Array>
+            <mxPoint x="280" y="680" as="sourcePoint" />
+            <mxPoint x="330" y="630" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-31" edge="1" parent="1" source="46CENPHky7xsO2MnEMLG-7" style="endArrow=none;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" target="46CENPHky7xsO2MnEMLG-17" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="315" y="60" />
+            </Array>
+            <mxPoint x="320" y="270" as="sourcePoint" />
+            <mxPoint x="370" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="退出" vertex="1">
+          <mxGeometry height="60" width="120" x="400" y="910" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-33" edge="1" parent="1" source="46CENPHky7xsO2MnEMLG-32" style="endArrow=none;html=1;rounded=0;exitX=0;exitY=0.75;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="320" y="955" />
+            </Array>
+            <mxPoint x="220" y="970" as="sourcePoint" />
+            <mxPoint x="320" y="750" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-35" edge="1" parent="1" source="46CENPHky7xsO2MnEMLG-17" style="endArrow=none;html=1;rounded=0;exitX=0.75;exitY=0;exitDx=0;exitDy=0;labelBackgroundColor=none;fontColor=default;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="-510" />
+            </Array>
+            <mxPoint x="560" y="-460" as="sourcePoint" />
+            <mxPoint x="610" y="-510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-39" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="46CENPHky7xsO2MnEMLG-40" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontColor=default;fillColor=default;" value="&lt;font style=&quot;background-color: light-dark(#ffffff, var(--ge-dark-color, #121212));&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;pre style=&quot;forced-color-adjust: none; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; box-shadow: none !important;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); box-shadow: none !important;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; box-shadow: none !important;&quot;&gt;add_patient&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;pre style=&quot;forced-color-adjust: none; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: center; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; font-family: &amp;quot;JetBrains Mono&amp;quot;, monospace; font-size: 9.8pt; box-shadow: none !important;&quot;&gt;&lt;span style=&quot;forced-color-adjust: none; background-color: light-dark(#ffffff, var(--ge-dark-color, #121212)); box-shadow: none !important;&quot;&gt;&lt;font style=&quot;forced-color-adjust: none; box-shadow: none !important;&quot;&gt;函数&lt;/font&gt;&lt;/span&gt;&lt;/pre&gt;&lt;font&gt;&lt;br&gt;&lt;/font&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="640" y="-370" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
