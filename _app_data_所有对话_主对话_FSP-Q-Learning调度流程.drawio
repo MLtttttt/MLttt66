@@ -1,0 +1,148 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36 Edg/148.0.0.0">
+  <diagram id="fsp-ql-flow" name="FSP-Q-Learning调度流程">
+    <mxGraphModel dx="1288" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="1800" pageHeight="600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="zone1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef7ee;strokeColor=#b6d7a8;strokeWidth=1;dashed=1;opacity=40;" value="" vertex="1">
+          <mxGeometry height="100" width="960" x="530" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="zone1_label" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#6aa84f;fontStyle=1;" value="分支1：正常（无Rewrite）" vertex="1">
+          <mxGeometry height="30" width="150" x="540" y="9" as="geometry" />
+        </mxCell>
+        <mxCell id="zone2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fce8e6;strokeColor=#e6b8af;strokeWidth=1;dashed=1;opacity=40;" value="" vertex="1">
+          <mxGeometry height="210" width="960" x="530" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="zone2_label" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#cc0000;fontStyle=1;" value="分支2：分配错误 → 触发Rewrite" vertex="1">
+          <mxGeometry height="30" width="180" x="560" y="127" as="geometry" />
+        </mxCell>
+        <mxCell id="zone3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f3e8f9;strokeColor=#d5a6e6;strokeWidth=1;dashed=1;opacity=40;" value="" vertex="1">
+          <mxGeometry height="110" width="1520" x="40" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="zone3_label" parent="1" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=11;fontColor=#8e5ea2;fontStyle=1;" value="Q表周期更新逻辑（Episode Renew）" vertex="1">
+          <mxGeometry height="24" width="250" x="50" y="382" as="geometry" />
+        </mxCell>
+        <mxCell id="A" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;strokeWidth=2;fontStyle=1;fontSize=13;" value="页面进入&#xa;DRAM缓存" vertex="1">
+          <mxGeometry height="55" width="140" x="60" y="35" as="geometry" />
+        </mxCell>
+        <mxCell id="B" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;strokeWidth=2;fontStyle=1;fontSize=11;" value="Agent查表Active-Q&#xa;→ 分配页类型&#xa;(LSB/CLSB/CMSB/MSB)" vertex="1">
+          <mxGeometry height="85" width="210" x="260" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="C" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=12;" value="编入FSP&#xa;正常落盘Flash" vertex="1">
+          <mxGeometry height="50" width="150" x="575" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="E" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=12;" value="页面生命周期无异常&#xa;全程原位存储" vertex="1">
+          <mxGeometry height="50" width="170" x="780" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="F" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=12;" value="Episode结束&#xa;(页面GC回收)" vertex="1">
+          <mxGeometry height="50" width="150" x="1010" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="G" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;strokeWidth=1.5;fontSize=11;" value="统计全周期时延&#xa;→ 计算正向Reward&#xa;→ 存入Shadow-Q累加" vertex="1">
+          <mxGeometry height="65" width="190" x="1210" y="12.5" as="geometry" />
+        </mxCell>
+        <mxCell id="D" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.5;fontSize=12;" value="&lt;br&gt;开启热度监控" vertex="1">
+          <mxGeometry height="50" width="150" x="590" y="157.5" as="geometry" />
+        </mxCell>
+        <mxCell id="H" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=2;fontStyle=1;fontSize=12;" value="实时统计读次数 &gt; 阈值&#xa;→ 标记脏页，触发Rewrite" vertex="1">
+          <mxGeometry height="55" width="200" x="780" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="I" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.5;fontSize=12;" value="慢页热数据回迁DRAM&#xa;原Flash页置无效" vertex="1">
+          <mxGeometry height="50" width="190" x="780" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="J" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;strokeWidth=1.5;fontSize=12;" value="数据放回D节点缓存池&#xa;等待下一轮FSP" vertex="1">
+          <mxGeometry height="50" width="180" x="1040" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="K" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ea9999;strokeColor=#cc0000;strokeWidth=1.5;fontStyle=1;fontSize=12;" value="Rewrite造成性能损耗&#xa;→ Reward变低/负分" vertex="1">
+          <mxGeometry height="50" width="190" x="1040" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="L" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ea9999;strokeColor=#cc0000;strokeWidth=1.5;fontSize=12;" value="低分计入Shadow-Q&#xa;做惩罚扣分" vertex="1">
+          <mxGeometry height="50" width="160" x="1270" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="M" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;fontSize=12;" value="单Episode&#xa;生命周期完结" vertex="1">
+          <mxGeometry height="55" width="140" x="1280" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="N" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;fontSize=12;" value="Episode Renew周期到&#xa;Shadow整体复制覆盖Active-Q" vertex="1">
+          <mxGeometry height="55" width="220" x="830" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="O" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;strokeWidth=2;fontStyle=1;fontSize=11;" value="新Active表优化决策&#xa;同类状态减少选MSB/CMSB&#xa;→ 降低Rewrite触发次数" vertex="1">
+          <mxGeometry height="65" width="220" x="460" y="395" as="geometry" />
+        </mxCell>
+        <mxCell id="e_AB" edge="1" parent="1" source="A" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#6c8ebf;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="B">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BC" edge="1" parent="1" source="B" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#82b366;fontColor=#6aa84f;fontSize=11;exitX=1;exitY=0.25;entryX=0;entryY=0.5;" target="C" value="分配LSB/CLSB&#xa;高速页">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_BD" edge="1" parent="1" source="B" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#b85450;fontColor=#cc0000;fontSize=11;exitX=1;exitY=0.75;entryX=0;entryY=0.5;" target="D" value="分配CMSB/MSB&#xa;慢速页">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_CE" edge="1" parent="1" source="C" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#82b366;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="E">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_EF" edge="1" parent="1" source="E" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#82b366;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="F">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_FG" edge="1" parent="1" source="F" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#82b366;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="G">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_DH" edge="1" parent="1" source="D" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#b85450;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="H">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_HI" edge="1" parent="1" source="H" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#b85450;fontColor=#cc0000;fontSize=10;exitX=0.25;exitY=1;entryX=0.25;entryY=0;" target="I" value="数据回迁">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_IJ" edge="1" parent="1" source="I" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#b85450;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="J">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_JB" edge="1" parent="1" source="J" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#b85450;dashed=1;dashPattern=8 4;fontColor=#cc0000;fontSize=10;entryX=0.5;entryY=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="B" value="Agent二次&#xa;重新分类分配">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1130" y="320" />
+              <mxPoint x="365" y="320" />
+            </Array>
+            <mxPoint x="1130" y="320" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_HK" edge="1" parent="1" source="H" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#cc0000;fontColor=#cc0000;fontSize=10;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="K" value="性能损耗">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_KL" edge="1" parent="1" source="K" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#cc0000;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" target="L">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_GM" edge="1" parent="1" source="G" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#9673a6;exitX=1;exitY=0.5;entryX=1;entryY=0.5;exitDx=0;exitDy=0;" target="M">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1450" y="45" />
+              <mxPoint x="1450" y="428" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_LM" edge="1" parent="1" source="L" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=1.5;strokeColor=#9673a6;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="M">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1350" y="380" />
+              <mxPoint x="1350" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e_MN" edge="1" parent="1" source="M" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#9673a6;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="N">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_NO" edge="1" parent="1" source="N" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#9673a6;exitX=0;exitY=0.5;entryX=1;entryY=0.5;" target="O">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e_OA" edge="1" parent="1" source="O" style="edgeStyle=orthogonalEdgeStyle;rounded=1;strokeWidth=2;strokeColor=#9673a6;dashed=1;dashPattern=8 4;fontColor=#8e5ea2;fontSize=10;exitX=0;exitY=0.5;entryX=0;entryY=1;" target="A" value="后续Agent优化">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="30" y="427" />
+              <mxPoint x="30" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="2" edge="1" parent="1" source="O" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.025;entryY=1.021;entryDx=0;entryDy=0;entryPerimeter=0;" target="zone2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
